@@ -1,0 +1,28 @@
+.logo_main {
+   max-width: 50%;
+   height: auto;
+   float:left;
+   margin-right: 1px;
+}
+
+p {
+   margin: 0px;
+}
+
+.txt_top_right {
+   font-size:xx-large;
+   color:white;
+   text-align: center;
+   padding-top: 200px;
+}
+
+.break_img {
+   max-width: 50%;
+   height: auto;
+   float:right;
+}
+
+body {
+   margin: 0px;
+   background-color: rgb(254, 206, 43);
+}
