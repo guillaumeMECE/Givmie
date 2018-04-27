@@ -11,56 +11,48 @@
 <body id="article">
    <div class="square">
       <div class="content">
-         <form method="post" action="traitement.php">
+         <form action="mailto:guillaumemaurin.gm@gmail.com" method="post">
             Viennoiserie<br>
-            <select name="Viennoiserie">
+            <select name="Viennoiserie1">
                    <option value="Pain au Chocolat">Pain au Chocolat</option>
                    <option value="Croissant">Croissant</option>
                </select>
             <!--input type="submit" value="Envoyer le formulaire !"-->
-         </form>
-         <form method="post" action="traitement.php">
+
             Viennoiserie<br>
-            <select name="Viennoiserie">
+            <select name="Viennoiserie2">
                    <option value="Pain au Chocolat">Pain au Chocolat</option>
                    <option value="Croissant">Croissant</option>
                </select>
             <!--input type="submit" value="Envoyer le formulaire !"-->
-         </form>
-         <form method="post" action="traitement.php">
-            Jus<br>
+
+            <br>Jus<br>
             <select name="Jus">
                    <option value="Orange">Orange</option>
                    <option value="Pomme">Pomme</option>
                </select>
             <!--input type="submit" value="Envoyer le formulaire !"-->
-         </form>
-         <form method="post" action="traitement.php">
             Jour<br>
             <select name="Jour">
                    <option value="Samedi">Samedi</option>
                    <option value="Dimanche">Dimanche</option>
                </select>
             <!--input type="submit" value="Envoyer le formulaire !"-->
-         </form>
-         <form method="post" action="traitement.php">
             Horaire<br>
             <select name="Horaire">
                    <option value="8h-8h30">8h-8h30</option>
                    <option value="8h30-9h">8h30-9h</option>
-                   <option value="9h-9h30">8h-8h30</option>
-                   <option value="9h30-10h">8h30-9h</option>
-                   <option value="10h-10h30">8h-8h30</option>
-                   <option value="10h30-11h">8h30-9h</option>
-                   <option value="11h-11h30">8h-8h30</option>
-                   <option value="11h30-12h">8h30-9h</option>
-               </select>
-            <!--input type="submit" value="Envoyer le formulaire !"-->
+                   <option value="9h-9h30">9h-9h30</option>
+                   <option value="9h30-10h">9h30-10h"</option>
+                   <option value="10h-10h30">10h-10h30</option>
+                   <option value="10h30-11h">10h30-11h</option>
+                   <option value="11h-11h30">11h-11h30</option>
+                   <option value="11h30-12h">11h30-12h</option>
+               </select> Quantité :
+            <input type="number" name="quantity" min="1" max="10">
+            <input type="submit" value="Commander">
          </form>
-         <form>
-  Quantité :
-  <input type="number" name="quantity" min="1" max="10">
-</form>
+         <!--a href="page_article.html" class="button">Commander</a-->
       </div>
    </div>
 
