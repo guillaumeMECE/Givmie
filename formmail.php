@@ -1,16 +1,16 @@
 <?php
-$recipient = "guillaumemaurin.gm@gmail.com";
-$fmtMerci= implode("", file("merci.htt"));
-$fmtMail= implode("", file("mail.htt"));
+$TO = "guillaumemaurin.gm@gmail.com";
 
-foreach($_POST as $key=> $val) {
-$fmtMerci= str_replace("<$key>", $val, $fmtMerci);
-$fmtMail= str_replace("<$key>", $val, $fmtMail);
+$h  = "From: " . $TO;
+
+$message = "";
+
+while (list($key, $val) = each($_POST)) {
+  $message .= "$key : $val\n";
 }
 
-if ($_POST["access"] == "stopspam") {
-mail($recipient, $_POST["subject"], $fmtMail);
-}
+mail($TO, $subject, $message, $h);
 
-echo $fmtMerci;
+Header("Location: https://www.givmie.com/");
+
 ?>
