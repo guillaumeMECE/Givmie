@@ -11,8 +11,10 @@
 <body id="article">
    <div class="square">
       <div class="content">
-         <form action="mailto:guillaumemaurin.gm@gmail.com" method="post">
-            Viennoiserie<br>
+         <form action="formmail.php" method="POST">
+            <input type="hidden" name="subject" value="Formulaire de contact">
+            <input type="hidden" name="access" value="stopspam"> Viennoiserie
+            <br>
             <select name="Viennoiserie1">
                    <option value="Pain au Chocolat">Pain au Chocolat</option>
                    <option value="Croissant">Croissant</option>
@@ -55,6 +57,8 @@
          <!--a href="page_article.html" class="button">Commander</a-->
       </div>
    </div>
+
+
 
 </body>
 
